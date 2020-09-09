@@ -1,4 +1,5 @@
 import React from "react";
+import coverImage from "../../assets/cover/cover-image.jpg";
 
 function Nav() {
   const categories = [
@@ -22,7 +23,7 @@ function Nav() {
   return (
     <header>
       <h2>
-        <a href="/">
+        <a href="/" data-testid="link">
           <span role="img" aria-label="camera">
             {" "}
             📸
@@ -33,7 +34,7 @@ function Nav() {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a href="#about">About me</a>
+            <a href="#about" data-testid="about">About Me</a>
           </li>
           <li>
             <span>Contact</span>
